@@ -20,8 +20,5 @@ public class Main {
             new Student(" входит ", pool).start();
             new Student(" выходит ", pool).start();
         }
-
-
-
     }
 }

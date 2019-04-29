@@ -6,7 +6,7 @@ import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
 
 public class DoorPool<T> {
-    private final static int POOL_SIZE = 2; // размер пула
+    private final static int POOL_SIZE = 2;
     private final Semaphore semaphore = new Semaphore(POOL_SIZE, true);
     private final Queue<T> resources = new LinkedList<T>();
 
@@ -27,7 +27,7 @@ public class DoorPool<T> {
     }
 
     public void returnResource(T res) {
-        resources.add(res); // возвращение экземпляра в пул
+        resources.add(res);
         semaphore.release();
 
     }

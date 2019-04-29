@@ -1,7 +1,5 @@
 package com.mileshko.lesya.task1;
 
-import java.util.Random;
-
 public class Door {
     private  int idDoor;
 
